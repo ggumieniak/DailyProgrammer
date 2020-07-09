@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+var necklaceMatching = NecklaceMatching()
+
+necklaceMatching.showData()
 
