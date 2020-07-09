@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50422ACC24B77317003F1279 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50422ACB24B77317003F1279 /* main.swift */; };
+		50422AD624B77438003F1279 /* NecklaceMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50422AD524B77438003F1279 /* NecklaceMatching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		50422AC824B77317003F1279 /* DailyProgrammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DailyProgrammer; sourceTree = BUILT_PRODUCTS_DIR; };
 		50422ACB24B77317003F1279 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		50422AD524B77438003F1279 /* NecklaceMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecklaceMatching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,25 @@
 			isa = PBXGroup;
 			children = (
 				50422ACB24B77317003F1279 /* main.swift */,
+				50422AD724B7743C003F1279 /* Easy */,
 			);
 			path = DailyProgrammer;
+			sourceTree = "<group>";
+		};
+		50422AD724B7743C003F1279 /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+				50422AD824B77440003F1279 /* 383 */,
+			);
+			path = Easy;
+			sourceTree = "<group>";
+		};
+		50422AD824B77440003F1279 /* 383 */ = {
+			isa = PBXGroup;
+			children = (
+				50422AD524B77438003F1279 /* NecklaceMatching.swift */,
+			);
+			path = 383;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50422AD624B77438003F1279 /* NecklaceMatching.swift in Sources */,
 				50422ACC24B77317003F1279 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

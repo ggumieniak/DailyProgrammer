@@ -27,6 +27,27 @@ struct NecklaceMatching {
         self.wordsToMatch = wordsToMatch
     }
     
+}
+
+// MARK: Methods
+extension NecklaceMatching {
+    
+    private func same_necklace() -> Bool {
+        for word in wordsToMatch {
+            let original = word.original
+            let transformed = word.transformed
+            
+            if !checkIfWordsAreEqualZero(original, transformed) {
+                return false
+            }
+        }
+        return false
+    }
+    
+    private func checkIfWordsAreEqualZero(_ original: String, _ transformed: String) -> Bool {
+        return original.count == 0 && transformed.count == 0 ? true : false
+    }
+    
     func showData() {
         for item in wordsToMatch
         {
