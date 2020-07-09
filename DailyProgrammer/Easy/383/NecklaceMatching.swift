@@ -9,36 +9,23 @@
 import Foundation
 
 
-// MARK: Struct properties and init
+// MARK: Challenge
 struct NecklaceMatching {
-    private(set) var wordsToMatch: Array<(original: String, transformed: String)>
-    
-    init() {
-        self.wordsToMatch = []
-    }
-    
-    init(wordToMatch: (original: String, transformed: String)) {
-        self.init()
-        self.wordsToMatch.append(wordToMatch)
-    }
-    
-    init(wordsToMatch: Array<(String,String)>) {
-        self.init()
-        self.wordsToMatch = wordsToMatch
-    }
-    
-}
-
-// MARK: Methods
-extension NecklaceMatching {
-    
-    private func same_necklace() -> Bool {
-        for word in wordsToMatch {
-            let original = word.original
-            let transformed = word.transformed
-            
-            if !checkIfWordsAreEqualZero(original, transformed) {
-                return false
+    func same_necklace(_ original: String, _ transformed: String) -> Bool {
+        if checkIfWordsAreEqualZero(original, transformed) {
+            return true
+        }
+        if !checkIfWordsAreEqualLength(original, transformed) {
+            return false
+        }
+        
+        var tempTransformed: String = transformed
+        let length = original.count
+        
+        for i in 0..<original.count {
+            tempTransformed = String(transformed.suffix(i)) + String(transformed.prefix(length - i))
+            if tempTransformed == original {
+                return true
             }
         }
         return false
@@ -48,10 +35,7 @@ extension NecklaceMatching {
         return original.count == 0 && transformed.count == 0 ? true : false
     }
     
-    func showData() {
-        for item in wordsToMatch
-        {
-            print("Oryginal: \(item.original), po przemianie \(item.transformed)")
-        }
+    private func checkIfWordsAreEqualLength(_ original: String, _ transformed: String) -> Bool {
+        return original.count == transformed.count ? true : false
     }
 }

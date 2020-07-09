@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		50422AC824B77317003F1279 /* DailyProgrammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DailyProgrammer; sourceTree = BUILT_PRODUCTS_DIR; };
 		50422ACB24B77317003F1279 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		50422AD524B77438003F1279 /* NecklaceMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecklaceMatching.swift; sourceTree = "<group>"; };
+		50422AD524B77438003F1279 /* NecklaceMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecklaceMatching.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
