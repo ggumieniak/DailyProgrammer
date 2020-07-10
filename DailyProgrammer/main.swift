@@ -8,16 +8,13 @@
 
 import Foundation
 
-var necklaceMatching = NecklaceMatching()
+var yahtzee = YahtzeeUpper()
 
-print(necklaceMatching.same_necklace("nicole", "icolen"))
-print(necklaceMatching.same_necklace("nicole", "lenico"))
-print(necklaceMatching.same_necklace("nicole", "coneli"))
-print(necklaceMatching.same_necklace("aabaaaaabaab", "aabaabaabaaa"))
-print(necklaceMatching.same_necklace("abc", "cba"))
-print(necklaceMatching.same_necklace("xxyyy", "xxxyy"))
-print(necklaceMatching.same_necklace("xyxxz", "xxyxz"))
-print(necklaceMatching.same_necklace("x", "x"))
-print(necklaceMatching.same_necklace("x", "xx"))
-print(necklaceMatching.same_necklace("x", ""))
-print(necklaceMatching.same_necklace("", ""))
+yahtzee.yahtzee_upper([2, 3, 5, 5, 6]) // 10
+yahtzee.yahtzee_upper([1, 1, 1, 1, 3]) // 4
+yahtzee.yahtzee_upper([1, 1, 1, 3, 3]) // 6
+yahtzee.yahtzee_upper([1, 2, 3, 4, 5]) // 5
+yahtzee.yahtzee_upper([6, 6, 6, 6, 6]) // 30
+yahtzee.yahtzee_upper([1654, 1654, 50995, 30864, 1654, 50995, 22747,
+1654, 1654, 1654, 1654, 1654, 30864, 4868, 1654, 4868, 1654,
+30864, 4868, 30864]) // 123456
